@@ -1,0 +1,101 @@
+*{
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    color: #e7e7e7;
+    min-height: 100vh;
+    line-height: 1.5;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.image-gradient{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+.layer-blur{
+    height: 0;
+    width: 30rem;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    box-shadow: 0 0 700px 15px white;
+    rotate: -30deg;
+
+}
+.container {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  width: 350px;
+  box-shadow: 0 4px 10px black;
+  z-index: 1;
+}
+
+.todo-app input {
+  width: 75%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black; /* Add this line */
+  
+}
+
+
+.todo-app button {
+  background-color: #4b0076;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: black;
+}
+
+li .text {
+  flex-grow: 1;
+  margin-left: 10px;
+  color: black;
+}
+
+.checkbox {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #ff4d4d;
+  border: none;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+}
+
+
